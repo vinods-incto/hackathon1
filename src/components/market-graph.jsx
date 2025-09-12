@@ -135,7 +135,7 @@ const chartConfig = {
   }
 }
 
-export function ChartAreaInteractive() {
+export function MarketGraph() {
   const isMobile = useIsMobile()
   const [timeRange, setTimeRange] = React.useState("90d")
     const wsData = useWebSocket("wss://ws.coincap.io/prices?assets=bitcoin,ethereum,monero")
