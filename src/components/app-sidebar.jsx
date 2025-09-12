@@ -15,7 +15,26 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import {ScrollText,BookUser,FileText,Users,Bell,Logs,ToyBrick,LayoutDashboard,ChartBarBig,BadgeDollarSign, Bot, ChartCandlestick, CloudSun, Earth, Fan, SquarePlay, Workflow} from "lucide-react";
+import {
+    ScrollText,
+    BookUser,
+    FileText,
+    Users,
+    Bell,
+    Logs,
+    ToyBrick,
+    LayoutDashboard,
+    ChartBarBig,
+    BadgeDollarSign,
+    Bot,
+    ChartCandlestick,
+    CloudSun,
+    Earth,
+    Fan,
+    SquarePlay,
+    Workflow,
+    SunSnow, BadgeIndianRupee, Plane, PlaneTakeoff
+} from "lucide-react";
 
 
 const data = {
@@ -32,21 +51,27 @@ const data = {
             subMenu: [
                 {
                     title: "Market Stream",
-                    url: "/dashboard/market-stream",
+                    url: "/dashboard/market-visualization",
                     icon:ChartCandlestick,
                     description: "Real-time Market prices",
                 },
                 {
-                    title: "Earthquake Stats",
-                    url: "/dashboard/seismic-data",
+                    title: "Seismic Stream",
+                    url: "/dashboard/seismic-visualization",
                     icon:Earth,
                     description: "USGS live earthquake data",
                 },
                 {
-                    title: "Weather Overview",
-                    url: "/dashboard/weather",
+                    title: "Weather Stream",
+                    url: "/dashboard/weather-visualization",
                     icon:CloudSun,
                     description: "OpenWeatherMap real-time metrics",
+                },
+                {
+                    title: "Flights Stream",
+                    url: "/dashboard/flight-visualization",
+                    icon:PlaneTakeoff,
+                    description: "Flight real-time metrics",
                 },
             ],
         },
@@ -56,17 +81,27 @@ const data = {
             icon: ChartBarBig,
             subMenu: [
                 {
-                    title: "Market Charts",
+                    title: "Market Data",
                     url: "/analytics/market-charts",
-                    icon: BadgeDollarSign,
+                    icon: BadgeIndianRupee,
                     description: "Line / bar charts from live Realtime Market data",
                 },
                 {
-                    title: "Air Quality",
-                    url: "/analytics/air-quality",
-                    icon: Fan,
+                    title: "Seismic Data",
+                    url: "/analytics/seismic-charts",
+                    icon: Earth,
                     description: "Realtime OpenAQ measurements",
+                },{
+                title: "Weather Data",
+                url: "/analytics/weather-charts",
+                icon: SunSnow,
                 },
+                {
+                    title: "Flight Data",
+                    url: "/analytics/flight-charts",
+                    icon: Plane,
+                    description: "Realtime Flight data",
+                }
             ],
         },
         {
