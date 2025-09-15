@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 import { RefreshCcw, FileDown, Save } from "lucide-react";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
-import Loader from "@/Components/Loader";
+import Loader from "@/components/Loader";
 import toast from "react-hot-toast";
 
 const fullYearData = [
